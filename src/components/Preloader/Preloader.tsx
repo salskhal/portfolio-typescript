@@ -1,12 +1,7 @@
 import head from "../../assets/head.svg";
 import "./preloader.css";
 
-interface PreloaderProps {
-  isLoading: boolean;
-  setIsLoading: (isLoading: boolean) => void;
-}
-
-export default function Preloader({ isLoading, setIsLoading }: PreloaderProps) {
+export default function Preloader() {
   return (
     <div className="fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-[#111827]">
       <div className="flex items-center justify-center min-h-screen bg-[#111827]">
