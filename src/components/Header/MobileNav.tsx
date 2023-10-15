@@ -1,15 +1,19 @@
 import logo from "@/assets/logo.svg";
 import { HomeIcon, AboutIcon, WorkIcon } from "@/icons";
+import React from "react";
 
 interface MobileNavProps {
   isMobileNavOpen: boolean;
   setIsMobileNavOpen: (isOpen: boolean) => void;
 }
 
-
-export default function MobileNav({ isMobileNavOpen, setIsMobileNavOpen } : MobileNavProps) {
-  const handleMobileNav = (e) => {
-    if (e.target.classList.contains("overlay")) {
+export default function MobileNav({
+  isMobileNavOpen,
+  setIsMobileNavOpen,
+}: MobileNavProps) {
+  const handleMobileNav = (e: React.MouseEvent) => {
+    const target = e.target as HTMLElement;
+    if (target.classList.contains("overlay")) {
       setIsMobileNavOpen(!isMobileNavOpen);
     }
   };

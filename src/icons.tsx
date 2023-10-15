@@ -1,10 +1,16 @@
-export const HtmlIcon = (props) => (
+import React from "react";
+
+interface IconProps {
+  className?: string;
+}
+
+export const HtmlIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={12}
     height={13}
     fill="none"
-    
+    {...props}
   >
     <path
       fill="#fff"
@@ -13,7 +19,7 @@ export const HtmlIcon = (props) => (
   </svg>
 );
 
-export const CssIcon = (props) => (
+export const CssIcon: React.FC<IconProps> = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={11} height={12} {...props}>
     <path
       fill="#fff"
@@ -22,7 +28,7 @@ export const CssIcon = (props) => (
   </svg>
 );
 
-export const VueIcon = (props) => (
+export const VueIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={16}
@@ -41,7 +47,7 @@ export const VueIcon = (props) => (
   </svg>
 );
 
-export const ReactIcon = (props) => (
+export const ReactIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={16}
@@ -68,7 +74,7 @@ export const ReactIcon = (props) => (
   </svg>
 );
 
-export const JavascriptIcon = (props) => (
+export const JavascriptIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={12}
@@ -83,7 +89,7 @@ export const JavascriptIcon = (props) => (
   </svg>
 );
 
-export const NodeIcon = (props) => (
+export const NodeIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={12}
@@ -98,7 +104,7 @@ export const NodeIcon = (props) => (
   </svg>
 );
 
-export const ExpressIcon = (props) => (
+export const ExpressIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={12}
@@ -120,7 +126,7 @@ export const ExpressIcon = (props) => (
   </svg>
 );
 
-export const HamburgerIcon = (props) => (
+export const HamburgerIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={17}
@@ -138,7 +144,7 @@ export const HamburgerIcon = (props) => (
   </svg>
 );
 
-export const HomeIcon = (props) => (
+export const HomeIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -157,7 +163,7 @@ export const HomeIcon = (props) => (
   </svg>
 );
 
-export const AboutIcon = (props) => (
+export const AboutIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -176,7 +182,7 @@ export const AboutIcon = (props) => (
   </svg>
 );
 
-export const WorkIcon = (props) => (
+export const WorkIcon: React.FC<IconProps> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
