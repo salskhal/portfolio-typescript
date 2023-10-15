@@ -18,7 +18,7 @@ export default function App() {
   }, []);
 
   if (isLoading) {
-    return <Preloader isLoading={isLoading} setIsLoading={setIsLoading} />;
+    return <Preloader  />;
   }
 
   return (
